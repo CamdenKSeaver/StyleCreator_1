@@ -7,12 +7,63 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/header"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:text="Please Type Your Name"
+        android:textColor="@color/secondaryTextColor"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.107" />
+
+    <Button
+        android:id="@+id/enter"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:layout_marginStart="162dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="162dp"
+        android:layout_marginBottom="168dp"
+        android:onClick="countLetters"
+        android:text="Enter"
+        app:layout_constraintBottom_toTopOf="@+id/answer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/namet"
+        tools:ignore="OnClick" />
+
+    <EditText
+        android:id="@+id/namet"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="28dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Enter Name"
+        app:layout_constraintBottom_toTopOf="@+id/enter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header" />
+
+    <TextView
+        android:id="@+id/answer"
+        android:layout_width="@dimen/textWidth"
+        android:layout_height="@dimen/textHeight"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="200dp"
+        android:text=""
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@+id/enter" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
