@@ -1,11 +1,18 @@
 package com.example.stylecreator;
 
 import androidx.appcompat.app.AppCompatActivity;
+import android.app.Activity;
+import android.os.Bundle;
+import android.view.View;
+import android.view.View.OnClickListener;
 
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+
+import java.util.Locale;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -30,12 +37,28 @@ public class MainActivity extends AppCompatActivity {
         return count;
     }
     public void countLetters(View view){
-     //text = findViewById(R.id.namet);
+     text = findViewById(R.id.namet);
        name = findViewById(R.id.answer);
-       // int count = count((String) text.getText());
-      //  name.setText("Your Name, " + text.getText() + " has " + count + " Letters");
+        int count = count(text.getText().toString());
+        name.setText("Your Name, " + text.getText().toString() + ", has " + count + " Letters");
 
-        name.setText("camden");
+        //name.setText("camden");
 
-    }
+
+}
+
+public String backwards(String str){
+        String a ="";
+        for(int i = str.length()-1;i>-1;i--){
+            a += str.substring(i,i+1);
+        }
+        return a;
+}
+
+public void NameBackwards(View view){
+    text = findViewById(R.id.namet);
+    name = findViewById(R.id.answer);
+
+    name.setText("Your Name, " + text.getText().toString() + ", backwards is " + backwards(text.getText().toString()).toLowerCase(Locale.ROOT) );
+}
 }
