@@ -4,5 +4,6 @@
     <dimen name="textHeight">50dp</dimen>
     <dimen name="editTextWidth">300dp</dimen>
     <dimen name="editTextHeight">60dp</dimen>
-    <dimen name="fontSize">20sp</dimen>
+    <dimen name="EditTextFontSize">20sp</dimen>
+    <dimen name="TextFontSize">38sp</dimen>
 </resources>

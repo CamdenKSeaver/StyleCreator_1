@@ -26,4 +26,18 @@
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
     </style>
+<style name = "GreenText" parent="TextAppearance.AppCompat">
+    <item name ="android:textColor">#005b4f</item>
+    <item name = "android:fontFamily">cursive</item>
+
+
+    </style>
+
+<style name = "ButtonText" parent="TextAppearance.AppCompat">
+<item name ="android:textColor">#000000</item>
+<item name = "android:fontFamily">sans-serif-black</item>
+
+
+</style>
+
 </resources>

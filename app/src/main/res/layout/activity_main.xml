@@ -17,7 +17,8 @@
         android:onClick="NameBackwards"
         android:text="Name Backwards"
         android:textAllCaps="false"
-        android:textSize="@dimen/fontSize"
+        android:textSize="@dimen/EditTextFontSize"
+
         app:layout_constraintBottom_toTopOf="@+id/answer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -26,30 +27,34 @@
 
     <TextView
         android:id="@+id/header"
+        style="@style/GreenText"
         android:layout_width="@dimen/textWidth"
         android:layout_height="@dimen/textHeight"
         android:text="Please Type Your Name"
+        android:textAppearance="@style/GreenText"
         android:textColor="@color/secondaryTextColor"
-        android:textSize="30sp"
+        android:textSize="@dimen/TextFontSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.617"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.107" />
+        app:layout_constraintVertical_bias="0.11" />
 
     <Button
         android:id="@+id/enter"
+        style="@style/ButtonText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="154dp"
         android:layout_marginTop="28dp"
         android:layout_marginEnd="154dp"
         android:layout_marginBottom="168dp"
+
         android:onClick="countLetters"
         android:text="Count Letters"
         android:textAllCaps="false"
-        android:textSize="@dimen/fontSize"
+        android:textSize="@dimen/EditTextFontSize"
         app:layout_constraintBottom_toTopOf="@+id/answer"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
