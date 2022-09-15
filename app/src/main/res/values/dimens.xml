@@ -6,4 +6,6 @@
     <dimen name="editTextHeight">60dp</dimen>
     <dimen name="EditTextFontSize">20sp</dimen>
     <dimen name="TextFontSize">38sp</dimen>
+    <dimen name="imageSize">70dp</dimen>
+
 </resources>

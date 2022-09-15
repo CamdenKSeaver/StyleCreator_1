@@ -2,6 +2,7 @@ package com.example.stylecreator;
 
 import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -58,7 +59,8 @@ public String backwards(String str){
 public void NameBackwards(View view){
     text = findViewById(R.id.namet);
     name = findViewById(R.id.answer);
-
+    Intent intent = new Intent(MainActivity.this, OtherActivity.class);
+    startActivity(intent);
     name.setText("Your Name, " + text.getText().toString() + ", backwards is " + backwards(text.getText().toString()).toLowerCase(Locale.ROOT) );
 }
 }

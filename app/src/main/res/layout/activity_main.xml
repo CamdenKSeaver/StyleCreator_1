@@ -30,16 +30,17 @@
         style="@style/GreenText"
         android:layout_width="@dimen/textWidth"
         android:layout_height="@dimen/textHeight"
+        android:gravity="center_horizontal"
         android:text="Please Type Your Name"
         android:textAppearance="@style/GreenText"
         android:textColor="@color/secondaryTextColor"
         android:textSize="@dimen/TextFontSize"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.617"
+        app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.11" />
+        app:layout_constraintVertical_bias="0.133" />
 
     <Button
         android:id="@+id/enter"
@@ -72,13 +73,14 @@
         android:ems="10"
         android:hint="Enter Name"
         android:inputType="textPersonName"
-        android:textSize="@dimen/fontSize"
+        android:textSize="@dimen/EditTextFontSize"
         app:layout_constraintBottom_toTopOf="@+id/enter"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/header" />
 
     <TextView
+        android:gravity="center_horizontal"
         android:id="@+id/answer"
         android:layout_width="@dimen/textWidth"
         android:layout_height="@dimen/textHeight"
