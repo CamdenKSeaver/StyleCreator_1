@@ -59,8 +59,13 @@ public String backwards(String str){
 public void NameBackwards(View view){
     text = findViewById(R.id.namet);
     name = findViewById(R.id.answer);
+
+    name.setText("Your Name, " + text.getText().toString() + ", backwards is " + backwards(text.getText().toString()).toLowerCase(Locale.ROOT) );
+
+}
+
+public void changeLayout(View view){
     Intent intent = new Intent(MainActivity.this, OtherActivity.class);
     startActivity(intent);
-    name.setText("Your Name, " + text.getText().toString() + ", backwards is " + backwards(text.getText().toString()).toLowerCase(Locale.ROOT) );
 }
 }

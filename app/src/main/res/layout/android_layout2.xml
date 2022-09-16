@@ -6,15 +6,133 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".OtherActivity">
-<LinearLayout
+
+    <LinearLayout
+        android:id="@+id/Polish"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
         android:gravity="center_horizontal"
-    >
+        android:orientation="vertical"
+        android:theme="">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="170dp"
+        android:textSize="50sp"
+        android:text="Hello Around the World"
+        android:gravity="center_horizontal"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:textColor="@color/secondaryTextColor"></TextView>
+        <Button
+            android:id="@+id/English"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryDarkColor2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Click Me"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="sayHello1"
+            android:textSize="30sp"></Button>
+
+        <TextView
+            android:id="@+id/a"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="30dp"
+            android:gravity="center_horizontal"
+            android:hint="English"
+            android:textSize="35sp"></TextView>
+
+        <Button
+            android:id="@+id/Espanol"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryDarkColor2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Click Me"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="sayHello2"
+            android:textSize="30sp"></Button>
+
+        <TextView
+            android:id="@+id/b"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="30dp"
+            android:gravity="center_horizontal"
+            android:hint="Espanol"
+            android:textSize="35sp"></TextView>
+
+        <Button
+            android:id="@+id/French"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryDarkColor2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Click Me"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="sayHello3"
+            android:textSize="30sp"></Button>
+
+        <TextView
+            android:id="@+id/c"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="30dp"
+            android:gravity="center_horizontal"
+            android:hint="French"
+            android:textSize="35sp"></TextView>
+
+        <Button
+            android:id="@+id/German"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryDarkColor2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Click Me"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:onClick="sayHello4"
+            android:textSize="30sp"></Button>
+
+        <TextView
+            android:id="@+id/d"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="30dp"
+            android:gravity="center_horizontal"
+            android:hint="German"
+            android:textSize="35sp"></TextView>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/secondaryDarkColor2"
+            android:paddingTop="20dp"
+            android:paddingBottom="20dp"
+            android:text="Click Me"
+            android:textAllCaps="false"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:onClick="sayHello5"
+            ></Button>
+
+        <TextView
+            android:id="@+id/e"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_marginVertical="30dp"
+            android:gravity="center_horizontal"
+            android:hint="Polish"
+            android:textSize="35sp"></TextView>
 
 
-
-
-</LinearLayout>
+    </LinearLayout>
     </ScrollView>
