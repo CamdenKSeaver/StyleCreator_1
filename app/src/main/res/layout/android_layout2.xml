@@ -13,28 +13,26 @@
         android:layout_height="wrap_content"
         android:gravity="center_horizontal"
         android:orientation="vertical"
-        android:theme="">
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="170dp"
-        android:textSize="50sp"
-        android:text="Hello Around the World"
-        android:gravity="center_horizontal"
-        android:paddingTop="20dp"
-        android:paddingBottom="20dp"
-        android:textColor="@color/secondaryTextColor"></TextView>
+        >
+
+        <TextView
+            android:id="@+id/HelloHeader"
+            style="@style/HelloHeader"
+            android:layout_width="match_parent"
+            android:layout_height="170dp"
+            android:gravity="center_horizontal"
+            android:paddingTop="@dimen/padding"
+            android:paddingBottom="@dimen/padding"
+            android:text="Hello Around the World"
+            android:textColor="@color/secondaryTextColor"
+            android:textSize="50sp"></TextView>
         <Button
+            style="@style/HelloButton"
             android:id="@+id/English"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/secondaryDarkColor2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="Click Me"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:onClick="sayHello1"
-            android:textSize="30sp"></Button>
+           ></Button>
 
         <TextView
             android:id="@+id/a"
@@ -46,17 +44,12 @@
             android:textSize="35sp"></TextView>
 
         <Button
+            style="@style/HelloButton"
             android:id="@+id/Espanol"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/secondaryDarkColor2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="Click Me"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:onClick="sayHello2"
-            android:textSize="30sp"></Button>
+            ></Button>
 
         <TextView
             android:id="@+id/b"
@@ -68,17 +61,12 @@
             android:textSize="35sp"></TextView>
 
         <Button
+            style="@style/HelloButton"
             android:id="@+id/French"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/secondaryDarkColor2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="Click Me"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:onClick="sayHello3"
-            android:textSize="30sp"></Button>
+            ></Button>
 
         <TextView
             android:id="@+id/c"
@@ -90,17 +78,12 @@
             android:textSize="35sp"></TextView>
 
         <Button
+            style="@style/HelloButton"
             android:id="@+id/German"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/secondaryDarkColor2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="Click Me"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
             android:onClick="sayHello4"
-            android:textSize="30sp"></Button>
+            ></Button>
 
         <TextView
             android:id="@+id/d"
@@ -112,15 +95,9 @@
             android:textSize="35sp"></TextView>
 
         <Button
+            style="@style/HelloButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:backgroundTint="@color/secondaryDarkColor2"
-            android:paddingTop="20dp"
-            android:paddingBottom="20dp"
-            android:text="Click Me"
-            android:textAllCaps="false"
-            android:textColor="#FFFFFF"
-            android:textSize="30sp"
             android:onClick="sayHello5"
             ></Button>
 
